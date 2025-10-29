@@ -1,0 +1,259 @@
+import React, { useRef, useEffect, useState } from 'react';
+import {
+  View,
+  StyleSheet,
+  StatusBar,
+  Text,
+  ActivityIndicator,
+  Alert,
+  TouchableWithoutFeedback,
+  ScrollView,
+  TouchableOpacity,
+  Dimensions,
+} from 'react-native';
+import { Video } from 'expo-av';
+import * as ScreenOrientation from 'expo-screen-orientation';
+
+export default function VideoPlayerScreen({ route }) {
+  const { channels, currentIndex } = route.params;
+  const videoRef = useRef(null);
+  const [loading, setLoading] = useState(true);
+  const [current, setCurrent] = useState(currentIndex);
+  const [showChannelList, setShowChannelList] = useState(false);
+  const [isLandscape, setIsLandscape] = useState(false);
+  const lastTap = useRef(null);
+
+  const currentChannel = channels[current];
+
+  // 🎬 Spela upp videon
+  useEffect(() => {
+    let isMounted = true;
+
+    const playVideo = async () => {
+      if (videoRef.current && isMounted) {
+        try {
+          setLoading(true);
+          await videoRef.current.unloadAsync();
+          await videoRef.current.loadAsync({ uri: currentChannel.url }, {}, false);
+          await videoRef.current.playAsync();
+        } catch (err) {
+          console.log('Fel vid autoplay:', err);
+          Alert.alert('Fel', 'Kunde inte spela kanalen.');
+        } finally {
+          if (isMounted) setLoading(false);
+        }
+      }
+    };
+
+    playVideo();
+
+    return () => {
+      isMounted = false;
+      if (videoRef.current) {
+        try {
+          videoRef.current.stopAsync();
+          videoRef.current.unloadAsync();
+        } catch (err) {
+          console.log('Fel vid stop/unload:', err);
+        }
+      }
+    };
+  }, [currentChannel]);
+
+  // 🧭 Lyssna på skärmrotationer
+  useEffect(() => {
+    const subscription = ScreenOrientation.addOrientationChangeListener(evt => {
+      const orientation = evt.orientationInfo.orientation;
+      if (
+        orientation === ScreenOrientation.Orientation.LANDSCAPE_LEFT ||
+        orientation === ScreenOrientation.Orientation.LANDSCAPE_RIGHT
+      ) {
+        setIsLandscape(true);
+      } else {
+        setIsLandscape(false);
+      }
+    });
+
+    return () => {
+      ScreenOrientation.removeOrientationChangeListener(subscription);
+    };
+  }, []);
+
+  // 🔁 Dubbelklick för att visa kanal-lista
+  const handleDoubleTap = event => {
+    const now = Date.now();
+    const DOUBLE_PRESS_DELAY = 300;
+    const { locationX } = event.nativeEvent;
+    const screenWidth = Dimensions.get('window').width;
+
+    if (locationX < screenWidth / 2) {
+      if (lastTap.current && now - lastTap.current < DOUBLE_PRESS_DELAY) {
+        setShowChannelList(prev => !prev);
+      }
+      lastTap.current = now;
+    }
+  };
+
+  // 🎞 När videon tar slut
+  const handlePlaybackStatusUpdate = status => {
+    if (status.didJustFinish) {
+      if (current + 1 < channels.length) {
+        setCurrent(current + 1);
+        setLoading(true);
+      } else {
+        Alert.alert('Slut', 'Det finns inga fler kanaler i denna kategori.');
+      }
+    }
+  };
+
+  return (
+    <View style={[styles.container, isLandscape && styles.landscape]}>
+      <StatusBar hidden />
+
+      {loading && (
+        <ActivityIndicator
+          size="large"
+          color="#66fcf1"
+          style={styles.loader}
+        />
+      )}
+
+      <TouchableWithoutFeedback onPress={handleDoubleTap}>
+        <Video
+          ref={videoRef}
+          style={isLandscape ? styles.videoLandscape : styles.video}
+          resizeMode="contain"
+          useNativeControls
+          onPlaybackStatusUpdate={handlePlaybackStatusUpdate}
+        />
+      </TouchableWithoutFeedback>
+
+      {/* Kanalinfo visas bara i stående läge */}
+      {!isLandscape && (
+        <View style={styles.overlay}>
+          <Text style={styles.channelName}>
+            {currentChannel.name || 'Okänd kanal'}
+          </Text>
+          {currentChannel.category && (
+            <Text style={styles.category}>{currentChannel.category}</Text>
+          )}
+        </View>
+      )}
+
+      {/* Lista med kanaler */}
+      {showChannelList && (
+        <View style={styles.popupOverlay}>
+          <View style={styles.popupContainer}>
+            <Text style={styles.popupTitle}>Välj kanal</Text>
+            <ScrollView contentContainerStyle={styles.popupScroll}>
+              {channels.map((ch, index) => (
+                <TouchableOpacity
+                  key={index.toString()}
+                  onPress={() => {
+                    setCurrent(index);
+                    setShowChannelList(false);
+                    setLoading(true);
+                  }}
+                  style={styles.channelListItem}
+                >
+                  <Text style={styles.channelListText}>{ch.name}</Text>
+                </TouchableOpacity>
+              ))}
+            </ScrollView>
+            <TouchableOpacity
+              onPress={() => setShowChannelList(false)}
+              style={styles.closeButton}
+            >
+              <Text style={styles.closeButtonText}>Stäng</Text>
+            </TouchableOpacity>
+          </View>
+        </View>
+      )}
+    </View>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#000',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  landscape: {
+    backgroundColor: '#000',
+  },
+  video: {
+    width: '100%',
+    height: '100%',
+  },
+  videoLandscape: {
+    width: Dimensions.get('window').height,
+    height: Dimensions.get('window').width,
+  },
+  loader: {
+    position: 'absolute',
+    top: 0,
+    bottom: 0,
+    left: 0,
+    right: 0,
+    justifyContent: 'center',
+    alignItems: 'center',
+    zIndex: 10,
+  },
+  overlay: {
+    position: 'absolute',
+    top: 50,
+    left: 20,
+    right: 20,
+    backgroundColor: 'rgba(0,0,0,0.4)',
+    padding: 12,
+    borderRadius: 8,
+  },
+  channelName: { color: '#66fcf1', fontSize: 22, fontWeight: 'bold' },
+  category: { color: '#c5c6c7', fontSize: 14, marginTop: 4 },
+  popupOverlay: {
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    width: '100%',
+    height: '100%',
+    backgroundColor: 'rgba(0,0,0,0.7)',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  popupContainer: {
+    width: '80%',
+    maxHeight: '70%',
+    backgroundColor: '#1e272e',
+    borderRadius: 12,
+    padding: 15,
+  },
+  popupTitle: {
+    color: '#66fcf1',
+    fontSize: 22,
+    fontWeight: 'bold',
+    textAlign: 'center',
+    marginBottom: 10,
+  },
+  popupScroll: { paddingBottom: 10 },
+  channelListItem: {
+    paddingVertical: 10,
+    paddingHorizontal: 15,
+    borderBottomColor: '#45a29e',
+    borderBottomWidth: 0.5,
+  },
+  channelListText: { color: '#fff', fontSize: 16 },
+  closeButton: {
+    marginTop: 10,
+    backgroundColor: '#45a29e',
+    paddingVertical: 10,
+    borderRadius: 8,
+    alignItems: 'center',
+  },
+  closeButtonText: {
+    color: '#0b0c10',
+    fontWeight: 'bold',
+    fontSize: 16,
+  },
+});
