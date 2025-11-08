@@ -1,5 +1,31 @@
 #EXTM3U
 
+#EXTINF:-1 tvg-id="Rudaw" tvg-logo="https://raw.githubusercontent.com/HalowTV/Kurdish-Logo/main/Rudaw.png" group-title="Kurdish TV",Rudaw HD https://d2rwmwucnr0d10.cloudfront.net/out/v1/43a85d1c67f44df38cbe1e807ac3f726/index.m3u8
+
+#EXTINF:-1 tvg-id="K24" tvg-logo="https://raw.githubusercontent.com/HalowTV/Kurdish-Logo/main/K24.png" group-title="Kurdish TV",Kurdistan 24 HD https://d2lxk4hgHS0ytl.cloudfront.net/live/k24/index.m3u8
+
+#EXTINF:-1 tvg-id="NRT" tvg-logo="https://raw.githubusercontent.com/HalowTV/Kurdish-Logo/main/NRT.png" group-title="Kurdish TV",NRT HD https://live.nrt.net/nerd/ngrp:nrt_all/playlist.m3u8
+
+#EXTINF:-1 tvg-id="WaarTV" tvg-logo="https://raw.githubusercontent.com/HalowTV/Kurdish-Logo/main/WAAR.png" group-title="Kurdish TV",Waar TV https://live.wrdom.com/live/waar_tv/index.m3u8
+
+#EXTINF:-1 tvg-id="Kurdsat" tvg-logo="https://raw.githubusercontent.com/HalowTV/Kurdish-Logo/main/Kurdsat.png" group-title="Kurdish TV",Kurdsat HD https://d1x82nydc8v33.cloudfront.net/out/v1/f4700a6b76fd45fd95bce45531bd7a81/index.m3u8
+
+#EXTINF:-1 tvg-id="GK" tvg-logo="https://raw.githubusercontent.com/HalowTV/Kurdish-Logo/main/GaliKurdistan.png" group-title="Kurdish TV",Gali Kurdistan https://www.kurdistantv.net/live/playlist.m3u8
+
+#EXTINF:-1 tvg-id="Sterk" tvg-logo="https://raw.githubusercontent.com/HalowTV/Kurdish-Logo/main/Sterk.png" group-title="Kurdish TV",Sterk TV https://sterktv.com/playlist.m3u8
+
+#EXTINF:-1 tvg-id="Newroz" tvg-logo="https://raw.githubusercontent.com/HalowTV/Kurdish-Logo/main/Newroz.png" group-title="Kurdish TV",Newroz TV https://newroztv.com/live/index.m3u8
+
+#EXTINF:-1 tvg-id="KurdsatMusic" tvg-logo="https://raw.githubusercontent.com/HalowTV/Kurdish-Logo/main/KurdsatMusic.png" group-title="Kurdish TV",Kurdsat Music https://kurdsatmusic.tv/live/index.m3u8
+
+#EXTINF:-1 tvg-id="KTV" tvg-logo="https://raw.githubusercontent.com/HalowTV/Kurdish-Logo/main/KTV.png" group-title="Kurdish TV",KTV https://live.ktv.krd/live/playlist.m3u8
+
+KURDISH SPORT
+
+#EXTINF:-1 tvg-id="AvaSport" tvg-logo="https://raw.githubusercontent.com/HalowTV/Kurdish-Logo/main/AvaSport.png" group-title="Kurdish Sport",AVA SPORT https://live9.karwan.tv/Avasporttusfstore/index.m3u8
+
+#EXTINF:-1 tvg-id="NRTSport" tvg-logo="https://raw
+
 #EXTINF:-1 tvg-id="GewherSport" tvg-logo="https://raw.githubusercontent.com/HalowTV/Kurdish-Logo/main/Gewher.png" group-title="Kurdish TV",Gewher Sport
 http://142.132.133.190:1935/live/Gewher/playlist.m3u8
 
