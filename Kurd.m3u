@@ -11,3 +11,39 @@ https://live20.bozztv.com/giatv/giatv-gewherislha88/gewherislha88/chunks.m3u8
 
 #EXTINF:-1 tvg-id="Kurd1HD" tvg-logo="https://raw.githubusercontent.com/HalowTV/Kurdish-Logo/main/Kurd1HD.png" group-title="Kurdish TV",Kurd1 HD
 https://cdn.northtelecom.org/KurdChannel.m3u8
+#EXTM3U
+
+#EXTINF:-1 tvg-id="SpedaTV" tvg-logo="https://raw.githubusercontent.com/HalowTV/Kurdish-Logo/main/Speda.png" group-title="Kurdish TV",Speda TV
+https://live9.karwan.tv/Spedtvyusfstore/index.m3u8
+
+#EXTINF:-1 tvg-id="SpedaDrama" tvg-logo="https://raw.githubusercontent.com/HalowTV/Kurdish-Logo/main/SpedaDrama.png" group-title="Kurdish TV",Speda Drama TV
+https://live9.karwan.tv/Speddeamyusfstore/index.m3u8
+
+#EXTINF:-1 tvg-id="AsmanTV" tvg-logo="https://raw.githubusercontent.com/HalowTV/Kurdish-Logo/main/AsmanTV.png" group-title="Kurdish TV",Asman TV
+https://live9.karwan.tv/Asmanhdyusgsyore/index.m3u8
+
+#EXTINF:-1 tvg-id="Srosht" tvg-logo="https://raw.githubusercontent.com/HalowTV/Kurdish-Logo/main/Srosht.png" group-title="Kurdish TV",Srosht TV
+https://live9.karwan.tv/Sroshtyusfstore/index.m3u8
+
+#EXTINF:-1 tvg-id="BahaTV" tvg-logo="https://raw.githubusercontent.com/HalowTV/Kurdish-Logo/main/BahaTV.png" group-title="Kurdish TV",Baha TV
+https://live9.karwan.tv/Bahatvyusfstore/index.m3u8
+
+#EXTINF:-1 tvg-id="AmozhgaryAcademyay" tvg-logo="https://raw.githubusercontent.com/HalowTV/Kurdish-Logo/main/AmozhgaryAcademyay.png" group-title="Kurdish TV",Amozghary Academya
+https://live9.karwan.tv/AmozhgaryAcademyayusfstore/index.m3u8
+#EXTM3U
+
+#EXTINF:-1 tvg-id="AvaSport" tvg-logo="https://raw.githubusercontent.com/HalowTV/Kurdish-Logo/main/AvaSport.png" group-title="Kurdish Sport",AVA SPORT
+https://live9.karwan.tv/Avasporttusfstore/index.m3u8
+
+#EXTINF:-1 tvg-id="NRTSport" tvg-logo="https://raw.githubusercontent.com/HalowTV/Kurdish-Logo/main/NRTSport.png" group-title="Kurdish Sport",NRT SPORT
+https://live9.karwan.tv/Nrtsportyusfstore/index.m3u8
+
+#EXTINF:-1 tvg-id="AsoSport" tvg-logo="https://raw.githubusercontent.com/HalowTV/Kurdish-Logo/main/AsoSport.png" group-title="Kurdish Sport",ASO SPORT
+https://live9.karwan.tv/Asosportyusfstore/index.m3u8
+
+#EXTINF:-1 tvg-id="4Sport" tvg-logo="https://raw.githubusercontent.com/HalowTV/Kurdish-Logo/main/4Sport.png" group-title="Kurdish Sport",4SPORT
+https://live9.karwan.tv/4sportyusfstore/index.m3u8
+
+#EXTINF:-1 tvg-id="LDSport" tvg-logo="https://raw.githubusercontent.com/HalowTV/Kurdish-Logo/main/LDSport.png" group-title="Kurdish Sport",LD SPORT
+https://live9.karwan.tv/Ldsportyusfstore/index.m3u8
+
