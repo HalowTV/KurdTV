@@ -1,10 +1,13 @@
 #EXTM3U
 
-#EXTINF:-1, Gewher Sport
+#EXTINF:-1 tvg-id="GewherSport" tvg-logo="https://i.imgur.com/8bZ2QbU.png" group-title="Kurdish TV",Gewher Sport
 http://142.132.133.190:1935/live/Gewher/playlist.m3u8
-#EXTINF:-1, Gewher sport
+
+#EXTINF:-1 tvg-id="GewherSport2" tvg-logo="https://i.imgur.com/8bZ2QbU.png" group-title="Kurdish TV",Gewher Sport (Backup)
 https://live20.bozztv.com/giatv/giatv-gewherspha88/gewherspha88/chunks.m3u8
-#EXTINF:-1, Gewher_islam
+
+#EXTINF:-1 tvg-id="GewherIslam" tvg-logo="https://i.imgur.com/tK0x6yP.png" group-title="Kurdish TV",Gewher Islam
 https://live20.bozztv.com/giatv/giatv-gewherislha88/gewherislha88/chunks.m3u8
-#EXTINF:-1, Kurd 1 HD
+
+#EXTINF:-1 tvg-id="Kurd1HD" tvg-logo="https://i.imgur.com/7Yc2Ldp.png" group-title="Kurdish TV",Kurd 1 HD
 https://cdn.northtelecom.org/KurdChannel.m3u8
