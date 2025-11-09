@@ -1,114 +1,114 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="Rudaw" group-title="Kurdish TV",Rudaw HD
+#EXTINF:-1,Rudaw HD
 https://d2rwmwucnr0d10.cloudfront.net/out/v1/43a85d1c67f44df38cbe1e807ac3f726/index.m3u8
 
-#EXTINF:-1 tvg-id="K24" group-title="Kurdish TV",Kurdistan 24 HD
+#EXTINF:-1,Kurdistan 24 HD
 https://d2lxk4hgHS0ytl.cloudfront.net/live/k24/index.m3u8
 
-#EXTINF:-1 tvg-id="NRT" group-title="Kurdish TV",NRT HD
+#EXTINF:-1,NRT HD
 https://live.nrt.net/nerd/ngrp:nrt_all/playlist.m3u8
 
-#EXTINF:-1 tvg-id="Kurdsat" group-title="Kurdish TV",Kurdsat HD
+#EXTINF:-1,Kurdsat HD
 http://hlspackager.akamaized.net/live/DB/KURDSAT_HD/HLS/KURDSAT_HD.m3u8
 
-#EXTINF:-1 tvg-id="WelatHD" group-title="Kurdish TV",Welat HD
+#EXTINF:-1,Welat HD
 http://stream.welattv.net:1935/welat/tv/playlist.m3u8
 
-#EXTINF:-1 tvg-id="AvarHD" group-title="Kurdish TV",Avar HD
+#EXTINF:-1,Avar HD
 http://avrstream.com:1935/live/AvarTv/playlist.m3u8
 
-#EXTINF:-1 tvg-id="Eurokurd" group-title="Kurdish TV",Eurokurd
+#EXTINF:-1,Eurokurd
 http://baskhd.ddns.net:40/live/Eurokurd/index.m3u8
 
-#EXTINF:-1 tvg-id="SadaTV" group-title="Kurdish TV",Sada TV
+#EXTINF:-1,Sada TV
 http://sada-hd.ddns.net:40/live/sadatv/index.m3u8?checkedby=Halabja88
 
-#EXTINF:-1 tvg-id="HalabjaTV" group-title="Kurdish TV",Halabja TV
+#EXTINF:-1,Halabja TV
 http://halabjatv.ddns.net:40/live/halabjatv/playlist.m3u8
 
-#EXTINF:-1 tvg-id="KhakTV" group-title="Kurdish TV",Khak TV
+#EXTINF:-1,Khak TV
 http://bblserver.ddns.net:1935/stream/khakhd/halabja88.m3u8
 
-#EXTINF:-1 tvg-id="SoranEntertainment" group-title="Kurdish TV",Soran Entertainment
+#EXTINF:-1,Soran Entertainment
 http://avrstream.com:1935/live/SoranEntertainment/playlist.m3u8
 
-#EXTINF:-1 tvg-id="ShnaTV" group-title="Kurdish TV",Shna TV
+#EXTINF:-1,Shna TV
 http://shnatv.ddns.net:1935/live/shnatv/playlist.m3u8
 
-#EXTINF:-1 tvg-id="RawshanHD" group-title="Kurdish TV",Rawshan HD
+#EXTINF:-1,Rawshan HD
 http://rawshan.ddns.net:1935/live/rawshantv/playlist.m3u8
 
-#EXTINF:-1 tvg-id="QellatTV" group-title="Kurdish TV",Qellat TV
+#EXTINF:-1,Qellat TV
 http://213.32.255.86:1935/live/Qellat_tv/chunklist_w1810817890.m3u8
 
-#EXTINF:-1 tvg-id="MirandaTV" group-title="Kurdish TV",Miranda TV
+#EXTINF:-1,Miranda TV
 http://baskhd.ddns.net:40/live/MihrabTV/playlist.m3u8?checkedby=Halabja88
 
-#EXTINF:-1 tvg-id="NaqshiMedia" group-title="Kurdish TV",Naqshi Media
+#EXTINF:-1,Naqshi Media
 http://naqshi-media.com:1935/live/NaqshiMedia/playlist.m3u8
 
-#EXTINF:-1 tvg-id="DerinHD" group-title="Kurdish TV",Derin HD
+#EXTINF:-1,Derin HD
 http://baskhd.ddns.net:40/live/Derin/index.m3u8?checkedby=Halabja88
 
-#EXTINF:-1 tvg-id="SharTV" group-title="Kurdish TV",SHAR TV
+#EXTINF:-1,SHAR TV
 http://avrstream.com:1935/live/SHARTV/playlist.m3u8
 
-#EXTINF:-1 tvg-id="MihrabFM" group-title="Kurdish TV",Mihrab FM
+#EXTINF:-1,Mihrab FM
 http://bblserver.ddns.net:1935/live/mihrabfm/playlist.m3u8
 
-#EXTINF:-1 tvg-id="IMKHD" group-title="Kurdish TV",IMK HD
+#EXTINF:-1,IMK HD
 http://imkhd.ddns.net:1935/live/imkhd/playlist.m3u8
 
-#EXTINF:-1 tvg-id="IMKQuranHD" group-title="Kurdish TV",IMK QURAN HD
+#EXTINF:-1,IMK QURAN HD
 http://avrstream.com:1935/live/IMKQURANHD/chunklist_w1733487751.m3u8
 
-#EXTINF:-1 tvg-id="Bangxwazen" group-title="Kurdish TV",Bangxwazen
+#EXTINF:-1,Bangxwazen
 http://bangxwazen.badinan.xyz:1935/live/Bangxwazen-Badinan/chunklist_w779630796.m3u8
 
-#EXTINF:-1 tvg-id="FarmodaTV" group-title="Kurdish TV",Farmoda TV
+#EXTINF:-1,Farmoda TV
 http://avrstream.com:1935/live/FarmodaTV/playlist.m3u8
 
-#EXTINF:-1 tvg-id="AlaHD" group-title="Kurdish TV",Ala HD
+#EXTINF:-1,Ala HD
 http://avrstream.com:1935/live/ala-hd/playlist.m3u8
 
-#EXTINF:-1 tvg-id="KidcoHD" group-title="Kurdish TV",Kidco HD
+#EXTINF:-1,Kidco HD
 http://avrstream.com:1935/live/kidcohd/chunklist_w1145444680.m3u8
 
-#EXTINF:-1 tvg-id="NubarTV" group-title="Kurdish TV",Nubar TV
+#EXTINF:-1,Nubar TV
 http://stream.nubar.tv:1935/private/NUBARtv/playlist.m3u8
 
-#EXTINF:-1 tvg-id="NubarPlus" group-title="Kurdish TV",Nubar plus
+#EXTINF:-1,Nubar plus
 http://stream.nubar.tv:1935/private/NUBARPlus/playlist.m3u8
 
-#EXTINF:-1 tvg-id="MMNKids" group-title="Kurdish TV",Mmn Kids
+#EXTINF:-1,Mmn Kids
 http://mmn.mypsx.net:1935/live/mmnhdkids/playlist.m3u8
 
-#EXTINF:-1 tvg-id="MMNShow" group-title="Kurdish TV",Mmn show
+#EXTINF:-1,Mmn show
 http://mmn.mypsx.net:1935/live/mmnhddshow/playlist.m3u8
 
-#EXTINF:-1 tvg-id="MMNNews" group-title="Kurdish TV",Mmn News
+#EXTINF:-1,Mmn News
 http://mmn.mypsx.net:1935/live/mmnhdnews/playlist.m3u8
 
-#EXTINF:-1 tvg-id="MMNDream" group-title="Kurdish TV",Mmn dream
+#EXTINF:-1,Mmn dream
 http://mmn.mypsx.net:1935/live/mmnhddrama/playlist.m3u8
 
-#EXTINF:-1 tvg-id="MMNActionHD" group-title="Kurdish TV",Mmn action HD
+#EXTINF:-1,Mmn action HD
 http://mmn.mypsx.net:1935/live/mmnhdaction/playlist.m3u8
 
-#EXTINF:-1 tvg-id="MMNMovies" group-title="Kurdish TV",Mmn movies
+#EXTINF:-1,Mmn movies
 http://mmn.mypsx.net:1935/live/mmnhdmovies/playlist.m3u8
 
-#EXTINF:-1 tvg-id="MMNQuran" group-title="Kurdish TV",Mmn Quran
+#EXTINF:-1,Mmn Quran
 http://mmn.mypsx.net:1935/live/mmnhdquran/playlist.m3u8
 
-#EXTINF:-1 tvg-id="MMNDocumentary" group-title="Kurdish TV",Mmn Documentary
+#EXTINF:-1,Mmn Documentary
 http://mmn.mypsx.net:1935/live/mmnhddocumentary/playlist.m3u8
 
-#EXTINF:-1 tvg-id="RavandHD" group-title="Kurdish TV",RAVAND HD
+#EXTINF:-1,RAVAND HD
 http://ravandtv.badinan.xyz:1935/live/RAVAND-HD/playlist.m3u8
 
-#EXTINF:-1 tvg-id="BASKHD" group-title="Kurdish TV",BASK HD
+#EXTINF:-1,BASK HD
 http://baskhd.ddns.net:40/live/baskhd/halabja88ottplayer.m3u8
 
-#EXTINF:-1 tvg-id="NR1Kurd" group-title="Kurdish TV",NR1 Kurd
+#EXTINF:-1,NR1 Kurd
 http://142.132.133.190:1935/live/NR1_KURD/playlist.m3u8
