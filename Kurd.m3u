@@ -1,8 +1,6 @@
 #EXTM3U
-
 #EXTINF:-1 tvg-id="Rudaw" tvg-logo="https://raw.githubusercontent.com/HalowTV/Kurdish-Logo/main/Rudaw.png" group-title="Kurdish TV",Rudaw HD
 https://d2rwmwucnr0d10.cloudfront.net/out/v1/43a85d1c67f44df38cbe1e807ac3f726/index.m3u8
-
 #EXTINF:-1 tvg-id="K24" tvg-logo="https://raw.githubusercontent.com/HalowTV/Kurdish-Logo/main/K24.png" group-title="Kurdish TV",Kurdistan 24 HD
 https://d2lxk4hgHS0ytl.cloudfront.net/live/k24/index.m3u8
 
