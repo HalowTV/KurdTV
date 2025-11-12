@@ -1,6 +1,27 @@
 #EXTM3U
+#EXTINF:-1 tvg-id="Welat" group-title="Halow", TEST TS
+http://kurdkanal.site:8080/Aso0/aso/4
+#EXTINF:-1 tvg-id="" tvg-name="RUDAWTV (HD)" tvg-logo="https://ia801403.us.archive.org/4/items/soz_20211021/rudaw.jpg" group-title="Kurdish (?????)",RUDAWTV (HD)
+http://kurdkanal.site:8080/Aso0/aso/1
+#EXTINF:-1 tvg-id="" tvg-name="K24 TV (HD)" tvg-logo="https://ia601403.us.archive.org/4/items/soz_20211021/k24.jpg" group-title="Kurdish (?????)",K24 TV (HD)
+http://kurdkanal.site:8080/Aso0/aso/4
+#EXTINF:-1 tvg-id="" tvg-name="KURDSAT ( HD)" tvg-logo="https://ia601403.us.archive.org/4/items/soz_20211021/kurdsat.jpg" group-title="Kurdish (?????)",KURDSAT ( HD)
+http://kurdkanal.site:8080/Aso0/aso/2
+#EXTINF:-1 tvg-id="" tvg-name="KURDSATNEWS HD" tvg-logo="https://ia801403.us.archive.org/4/items/soz_20211021/kurdsatnews.jpg" group-title="Kurdish (?????)",KURDSATNEWS HD
+http://kurdkanal.site:8080/Aso0/aso/3
+#EXTINF:-1 tvg-id="" tvg-name="CHANNEL 8 (HD)" tvg-logo="https://channel8.com/kurdish/wp-content/uploads/2023/07/logo-duotone.png" group-title="Kurdish (?????)",
 
-# All channels under Kurdish TV
+#EXTINF:-1 tvg-id="ISON" group-title="NEWS",ISON (1080p)
+#EXTINF:-1 tvg-id="" tvg-name="RUDAWTV (HD)" tvg-logo="https://ia801403.us.archive.org/4/items/soz_20211021/rudaw.jpg" group-title="NEWS",RUDAWTV (HD)
+http://kurdkanal.site:8080/Aso0/aso/4
+#EXTINF:-1 tvg-id="" tvg-name="K24 TV (HD)" tvg-logo="https://ia601403.us.archive.org/4/items/soz_20211021/k24.jpg" group-title="Kurdish (?????)",K24 TV (HD)
+http://kurdkanal.site:8080/Aso0/aso/4
+#EXTINF:-1 tvg-id="" tvg-name="KURDSAT ( HD)" tvg-logo="https://ia601403.us.archive.org/4/items/soz_20211021/kurdsat.jpg" group-title="Kurdish (?????)",KURDSAT ( HD)
+http://kurdkanal.site:8080/Aso0/aso/2
+#EXTINF:-1 tvg-id="" tvg-name="KURDSATNEWS HD" tvg-logo="https://ia801403.us.archive.org/4/items/soz_20211021/kurdsatnews.jpg" group-title="Kurdish (?????)",KURDSATNEWS HD
+http://kurdkanal.site:8080/Aso0/aso/3
+#EXTINF:-1 tvg-id="MPD KANAL" group-title="TEST",Halow (1080p)
+https://livesim.dashif.org/livesim/chunkdur_1/ato_7/testpic4_8s/Manifest.mpd
 #EXTINF:-1 tvg-id="Halow" group-title="Kurdish TV",Halow (1080p)
 http://stream.welattv.net:1935/welat/tv/playlist.m3u8
 
@@ -120,3 +141,6 @@ http://baskhd.ddns.net:40/live/baskhd/halabja88ottplayer.m3u8
 
 #EXTINF:-1 tvg-id="NR1Kurd" group-title="Kurdish TV",NR1 Kurd
 http://142.132.133.190:1935/live/NR1_KURD/playlist.m3u8
+#EXTINF:-1 tvg-id="NR1Kurd" group-title="Kurdish TV",ELSA Kurd (HD)
+http://142.132.133.190:1935/live/NR1_KURD/playlist.m3u8
+
