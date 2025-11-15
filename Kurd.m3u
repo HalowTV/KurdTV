@@ -1,4 +1,4 @@
 #EXTM3U
 
 #EXTINF:-1 TEST mpd
-http://127.0.0.1:63000/live/me_channel?me_url=turbo://live.0vcmc02vl8agx9z8jqsx/79c9c3765c92d3ee7100533e61987a91581b&ws_secret=18d8ccac&ws_time=d29e4ee0
+https://103.151.40.221:60000/chunk?oid=2lanhai8966a9b8ncwudq1kgtqy6aazr
