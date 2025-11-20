@@ -1,6 +1,8 @@
 #EXTM3U
 
-#EXTINF:-1 TEST mpd
-https://103.151.40.221:60000/chunk?oid=2lanhai8966a9b8ncwudq1kgtqy6aazr
-#EXTINF:-1 TEST 
-https://103.151.40.221:60000/chunk?oid=2lanhai8966a9b8ncwudq1kgtqy6aazr
+#EXTINF:-1 rudaw
+https://svs.itworkscdn.net/rudawlive/rudawlive.smil/playlist.m3u8
+#EXTINF:-1 rudaw MPD
+https://svs.itworkscdn.net/rudawlive/rudawlive.smil/manifest.mpd
+#EXTINF:-1 rudaw Manifest
+https://svs.itworkscdn.net/rudawlive/rudawlive.smil/Manifest
