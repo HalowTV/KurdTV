@@ -1,8 +1,17 @@
-#EXTM3U
+{
+  name: "RUDAW",
+  
+  auto: "https://svs.itworkscdn.net/rudawlive/rudawlive.smil/playlist.m3u8",
 
-#EXTINF:-1 rudaw
-https://svs.itworkscdn.net/rudawlive/rudawlive.smil/playlist.m3u8
-#EXTINF:-1 rudaw MPD
-https://svs.itworkscdn.net/rudawlive/rudawlive.smil/manifest.mpd
-#EXTINF:-1 rudaw Manifest
-https://svs.itworkscdn.net/rudawlive/rudawlive.smil/Manifest
+  p240: "https://svs.itworkscdn.net/rudawlive/rudawlive.smil/240p.m3u8",
+  p360: "https://svs.itworkscdn.net/rudawlive/rudawlive.smil/360p.m3u8",
+  p720: "https://svs.itworkscdn.net/rudawlive/rudawlive.smil/720p.m3u8",
+  p1080: "https://svs.itworkscdn.net/rudawlive/rudawlive.smil/1080p.m3u8",
+
+  // För din players nuvarande logik:
+  sd: "https://svs.itworkscdn.net/rudawlive/rudawlive.smil/240p.m3u8",
+  hd: "https://svs.itworkscdn.net/rudawlive/rudawlive.smil/720p.m3u8",
+  fhd: "https://svs.itworkscdn.net/rudawlive/rudawlive.smil/1080p.m3u8",
+
+  url: "https://svs.itworkscdn.net/rudawlive/rudawlive.smil/playlist.m3u8"  
+}
